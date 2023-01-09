@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 5% 1% 5%; 
+    background-color: white;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    height: 30px;
+}
+
+header ul li {
+    margin-left: 50px;
+    color: rgb(31, 32, 57);
+}
+
+header ul li:hover{
+    color: rgb(165, 180, 252);
+}
