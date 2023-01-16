@@ -5,16 +5,12 @@
     margin: 0;
     border: 0;
     font-family: 'Manrope';
+    cursor: default;
 }
 
 a {
     color: black;
     text-decoration: none;
-  }
-
-  button:hover{
-    cursor: pointer;
-    opacity: 0.9;
   }
   
   em {
@@ -32,15 +28,20 @@ a {
     font-size: 1.1em;
   }
 
-  button{
-    background: linear-gradient(#8e86b5, #acaeed);
-    color: white;
-    
-    font-size:medium;
-    padding: 4% 5% 4% 5%;
-    border-radius: 35px;
-    margin-top: 5%;
 
+ button{
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  font-size:medium;
+  padding: 20px 30px;
+  border-radius: 45px;
+  margin-top: 5%;
+
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 
@@ -85,13 +86,14 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
-    width: 100%;
+    width: 96%;
 }
 
 .grid-item {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    margin: auto;
   }
 
   .projets button{
@@ -145,6 +147,40 @@ a {
 
 }
 
+@media screen and (max-width:998px) {
+  
+.presentation{
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.info_presentation{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.info_presentation h1{
+  font-size: 2em;
+  margin-top: 5%;
+}
+
+.info_presentation p, h1{
+  text-align: center;
+}
+
+.info_presentation img{
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.images_grid{
+  grid-template-columns: 1fr;  
+}
+  
+}
 
 
 

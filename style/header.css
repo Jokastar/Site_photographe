@@ -6,6 +6,10 @@ header{
     background-color: white;
 }
 
+header img, header ul li{
+    cursor: pointer;
+}
+
 header ul{
     display: flex;
     list-style: none;
@@ -19,4 +23,25 @@ header ul li {
 
 header ul li:hover{
     color: rgb(165, 180, 252);
+}
+
+@media screen and (max-width:998px) {
+
+header{
+    flex-direction: column;
+    justify-content: center;
+}
+
+header ul li {
+    margin-left:  0px;
+}
+header img{
+    margin-bottom: 20%;
+}
+header ul{
+justify-content: space-around;
+padding: 0%;
+width: 50%;
+}
+
 }

@@ -5,3 +5,8 @@ footer{
     background-color: white;
     margin: 1% 5% 1% 5%;  
 }
+
+footer img{
+    cursor: pointer;
+}
+
